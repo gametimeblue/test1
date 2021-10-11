@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+#do{background:  skyblue; display: inline-block; width: 100px; height: 100px; margin-top: 50px;  }
+    #do:hover{position: relative; top: 20px; color: white; background-color: blue; }
+
+    #ra{background:  skyblue; display: inline-block; width: 100px; height: 100px; margin-top: 50px;  }
+    #ra:hover{position: relative; top: 20px; color: white; background-color: blue; }
+
+span{text-align: center; background: cyan; border: solid black; margin-left: 15px; top: 5px; margin-right: 15px; padding-bottom: 30px; text-decoration-style:none; }
+button{text-align: center; background: cyan; border: solid black; padding-bottom: 30px;}
+</style>
+
+</head>
+<body>
+ 
+    <button id="aplay1" > <span id="do">도</span></button>
+    <audio src="sound1.mp3" id="myAudio1"></audio>
+
+    <button id="aplay2" > <span id="ra">레</span></button>
+    <audio src="sound2.mp3" id="myAudio2"></audio>
+
+    <button id="aplay3" > <span id="ra">미</span></button>
+    <audio src="sound3.mp3" id="myAudio3"></audio>
+
+
+    <script>
+        var myAudio1 = document.getElementById('myAudio1');
+
+        document.getElementById('aplay1').addEventListener('click',play);
+
+        function play(){
+            myAudio1.play();
+        }
+    </script>
+
+<script>
+    var myAudio2 = document.getElementById('myAudio2');
+
+    document.getElementById('aplay2').addEventListener('click',play);
+
+    function play(){
+        myAudio2.play();
+    }
+</script>
+
+<script>
+    var myAudio3 = document.getElementById('myAudio3');
+
+    document.getElementById('aplay3').addEventListener('click',play);
+
+    function play(){
+        myAudio3.play();
+    }
+</script>
+
+</body>
+</html>
